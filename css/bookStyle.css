@@ -1,0 +1,254 @@
+body {
+    max-width: 900px;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+    background-image: url(../images/background/CEDFENCE.JPG);
+
+}
+
+a {
+    font-family: boska;
+    font-weight: bold;
+    color: var(--night);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--umbra);
+    text-decoration: underline;
+}
+
+.mainContainer {
+    background-image: url(../images/background/CARPET03.png);
+    margin: auto;
+    padding: 24px;
+    max-width: 800px;
+}
+
+.innerContainer {
+    background-image: url(../images/background/j06-bg-cloth.png);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 5px 5px rgba(22, 1, 1, 0.521);
+}
+
+.header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+
+    background-image: url(../images/background/j06-bg-cloth.png);
+    border: 1px dotted var(--gris);
+
+
+    font-family: boska;
+    font-weight: normal;
+    
+    font-size: 16px;
+    padding-left: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+}
+
+.left {
+    
+    text-align: center;
+    width: 40%;
+    padding: 4px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.right {
+    padding-left: 10px;
+    padding-top: 10px;
+
+    max-width: 580px;
+    overflow-y: auto;
+    max-height: 300px;
+    box-sizing: border-box;
+}
+
+.quote {
+    font-family: boska;
+    font-style: italic;
+    font-size: 15px;
+
+    text-align: left;
+    line-height: 18px;
+    border-left: 22px solid var(--twilight);
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 1px 1px var(--twilight);
+    background-color: #ffffff2f;
+}
+
+.comments {
+    margin: 8px 36px 0px 8px;
+    text-align: justify;
+    font-family: switzer;
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.book {
+    display: flex;
+    border-bottom: 1px dotted var(--gris);
+}
+
+@media (max-width: 600px) {
+    .book {
+        flex-direction: column;
+    }
+}
+
+.frame img {
+    text-align: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 150px;
+    margin-top: 8px;
+    border-radius: 3px;
+    border: 1px black solid;
+}
+
+.info {
+    font-family: switzer;
+    font-weight: light;
+    padding-top: 12px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.status {
+    color: var(--midnight);
+    font-style: italic;
+    font-size: 12px;
+    border: 1px dotted var(--gris);
+    border-radius: 4px;
+    background-color: var(--soft-blue);
+    padding: 2px 4px 2px 4px;
+    width: fit-content;
+    margin: auto auto 8px;
+
+    letter-spacing: 1px;
+}
+
+.title {
+    font-family: boska;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px;
+    margin-bottom: 2px;
+}
+
+.author {
+    font-weight:100;
+    font-size: 16px;
+    line-height: 17px;
+}
+
+.date {
+    font-weight: 100;
+    margin-top: 2px;
+    color: rgb(85, 85, 85);
+    font-size: 12px;
+}
+
+.collapsible {
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.589);
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 1px dotted var(--midnight);
+    box-sizing: border-box;
+
+    font-family: boska;
+    font-weight: normal;
+
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.active,
+.collapsible:hover {
+    background-color: var(--soft-blue);
+}
+
+.content {
+    display: none;
+    /* overflow: hidden; */
+}
+
+.current {
+    margin: auto auto 8px;
+    text-align: center;
+}
+
+.current img {
+    margin-top: 16px;
+    max-width: 200px;
+    /* border: 4px solid var(--gris);
+    border-radius: 4px; */
+}
+
+.tbr {
+    display: flex;
+    flex-direction: column;
+}
+
+.tbr>div {
+    border-bottom: 1px dotted var(--midnight);
+    text-align: left;
+    margin: 2px;
+    padding-left: 8px;
+    width: 100%;
+}
+
+.progressBar {
+    box-sizing: content-box;
+    height: 16px;
+    margin: 8px auto auto;
+    width: 40%;
+    background-color: rgb(229, 230, 253);
+    border-radius: 2px;
+    
+
+    font-family: switzer;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.progressBar>span {
+    display: block;
+    height: 100%;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom: 1px solid transparent;
+    background-color: var(--baby-blue);
+}
+
+ul {
+    list-style-image: url(/images/icons/blackStar.png);
+}
+
+#rating img {
+    width: 50%;
+    border: none;
+    margin: 8px auto;
+}
+
+#divider {
+    border-bottom: 1px dotted var(--gris);
+    margin: 8px 28px; 
+}

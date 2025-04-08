@@ -1,0 +1,354 @@
+:root {
+    --soft-blue: #8aa5e0;
+    --baby-blue: #a6c1fc;
+    --steel-blue: #4b639b;
+    --midnight: #3a527f;
+    --starlight: #fac372;
+    --twilight: #5f3c7f;
+    --sunset: #f09c83;
+    --moonlight: #cdd9ee;
+    --gris: #7f8796;
+    --umbra: #1b2124;
+    --shade: #162f40;
+    --night: #16191d;
+}
+
+/*  */
+
+html {
+    scrollbar-color: var(--midnight) var(--umbra);
+    scrollbar-width: thin;
+}
+
+body {
+    background-image: url(/../images/background/diamond-bg.png);
+    color: var(--umbra)
+}
+
+h1,
+h2,
+h3 {
+    font-family: rainy-hearts;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    line-height: 4px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 4px;
+}
+
+a {
+    color: var(--moonlight);
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+    color: #d7e4fa;
+}
+
+/* _ */
+
+.wrapper {
+    max-width: 900px;
+    min-width: 320px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--night);
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px ridge var(--twilight);
+    box-shadow: 3px 3px black;
+    width: 100%;
+    box-sizing: border-box;
+    
+    color: var(--moonlight)
+}
+
+.header img {
+    border-radius: 4px;
+    width: 100%;
+    border: 1px black ridge;
+    margin-top: 12px;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    text-align: right;
+    color: var(--moonlight);
+    margin-right: 8px;
+    font-size: 32px;
+}
+
+.header p {
+    text-align: right;
+    color: var(--moonlight);
+    font-family: fairfax;
+    font-size: 14px;
+}
+
+.header>div {
+    margin-top: 8px;
+    padding: 2px;
+    border-bottom: 1px dotted var(--gris)
+}
+
+.lowerContainer {
+    display: flex;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 4px;
+    gap: 8px;
+    background-image: url(../images/background/starGrid.png);
+    border: 1px ridge var(--twilight);
+    box-shadow: 3px 3px black;
+}
+
+.leftMenu {
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+    padding: 8px;
+
+    background-color: var(--night);
+    border: 1px ridge var(--twilight);
+    border-radius: 4px;
+
+}
+
+
+
+.leftMenu a:hover {
+    color: #e9f0fc;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.naviation {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navigation>h2 {
+    color: #d7acff;
+    letter-spacing: 1px;
+}
+
+.navigation>div {
+    margin: 4px;
+    padding: 3px;
+    border-bottom: 1px dotted #7f879654;
+    font-family: fairfax;
+    font-size: 14px;
+    text-align: left;
+    color: var(--moonlight)
+}
+
+.rightContent {
+    color: var(--moonlight);
+    font-family: fairfax;
+    padding: 2px;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.contentBlock {
+    padding: 8px 0px 8px 0px;
+    font-size: 12px;
+    background-color: var(--night);
+    border: 1px ridge var(--twilight);
+    border-radius: 4px;
+
+}
+
+.contentFlex {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.contentFlex>div {
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: var(--night);
+    border: 1px ridge var(--twilight);
+    border-radius: 4px;
+
+}
+
+.flexBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexBox>div {
+    margin-top: 2px;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.currentHead {
+    font-size: 14px;
+    background-color: var(--soft-blue);
+    color: var(--night);
+    padding: 3px;
+}
+
+.currentBody {
+    font-size: 12px;
+    text-align: right;
+    color: var(--moonlight);
+    padding: 4px;
+}
+
+
+.current {
+    min-width: 35%;
+}
+
+.current h2 {
+    font-size: 2em;
+}
+
+.current a {
+    color: var(--starlight)
+}
+
+#music a {
+    color: var(--moonlight)
+}
+
+.logbook {
+    width: 100%;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.blinkies {
+    margin: auto;
+    position: center;
+}
+
+.blinkies>img {
+    display: inline-block;
+    width: 20%;
+}
+
+table.logbook {
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+    border: 0px;
+    padding: 4px;
+}
+
+table.logbook th {
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+    width: 20%;
+    padding: 8px;
+    color: var(--soft-blue);
+    vertical-align: top;
+    border-bottom: 1px inset #7f87963f;
+}
+
+table.logbook td {
+    width: 80%;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px;
+    font-weight: normal;
+    border-bottom: 1px inset #7f87963f;
+    text-align: left;
+}
+
+table.logbook tr:hover {
+    background-color: #162f406c;
+}
+
+table.logbook th a {
+    color: var(--starlight);
+}
+
+table.logbook td a {
+    display: inline;
+    color: var(--starlight);
+    text-decoration: none;
+}
+
+table.logbook td a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-image: url(/images/icons/moonStar.png);
+    padding: 8px;
+    margin: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 16px;
+<<<<<<< Updated upstream
+=======
+}
+
+.neighbors {
+    padding: 2px 4px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.blinkies {
+    padding: 2px 4px;
+    margin: auto;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.blinkies>img {
+    width: 15%;
+}
+
+
+.siteButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.siteButton a{
+    margin: auto;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sidebar a {
+    font-size: 14px;
+>>>>>>> Stashed changes
+}
